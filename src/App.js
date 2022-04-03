@@ -10,20 +10,6 @@ import { setContext } from '@apollo/client/link/context';
 
 import Navbar from './components/NavBar/NavBar'
 import Homepage from './pages/Homepage'
-import Faq from './pages/Faq'
-import Attachments from './pages/Attachments'
-import Contact from './pages/Contact'
-import Team from './pages/Team'
-import Login from '../src/pages/Login'
-import Signup from '../src/pages/Signup'
-import Footer from './components/Footer/Footer'
-import Learn from './pages/Learn'
-import AddProfile from './pages/Add-Profile'
-import ViewProfile from './pages/ViewProfile'
-import EditProfile from './pages/Edit-Profile'
-import Dashboard from './pages/Dashboard';
-import Messages from './pages/Messages';
-import ChatPage from './pages/ChatPage';
 
 
 const url = process.env.NODE_ENV === 'development'
@@ -50,23 +36,18 @@ const client = new ApolloClient({
 });
 
 function App() {
+  const [attachment, setAttachment] = useState('');
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ApolloProvider client={client}>
+       <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Homepage />} />
+        </Routes>
+        <Footer />
+      </div>
+    </ApolloProvider>
   );
 }
 
