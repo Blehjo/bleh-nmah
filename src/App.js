@@ -8,8 +8,11 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-import Navbar from './components/NavBar/NavBar'
-import Homepage from './pages/Homepage'
+import Navbar from './components/NavBar/NavBar';
+import Homepage from './pages/Homepage';
+import Paintings from './pages/Paintings';
+import AboutMe from './pages/AboutMe';
+import Contact from './pages/Contact';
 
 
 const url = process.env.NODE_ENV === 'development'
@@ -37,13 +40,16 @@ const client = new ApolloClient({
 
 function App() {
   const [attachment, setAttachment] = useState('');
-  
+
   return (
     <ApolloProvider client={client}>
        <div className="App">
         <Navbar />
         <Routes>
           <Route path='/' element={<Homepage />} />
+          <Route path='/paintings' element={<Paintings />} />
+          <Route path='/aboutme' element={<AboutMe />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
         <Footer />
       </div>
