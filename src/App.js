@@ -14,6 +14,7 @@ import Paintings from './pages/Paintings';
 import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 
 const url = process.env.NODE_ENV === 'development'
@@ -52,6 +53,7 @@ function App() {
           <Route path='/aboutme' element={<AboutMe />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/signup' element={<Signup />} />
         </Routes>
         <Footer />
       </div>
