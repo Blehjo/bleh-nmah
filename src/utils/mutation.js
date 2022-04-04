@@ -53,55 +53,50 @@ export const REMOVE_USER = gql`
 `;
 
 export const ADD_LIBRARY = gql`
-  mutation addThread($text:String,$user:ID, $match:ID){
-    addThread(text:$text,  user:$user, match:$match){
+  mutation addLibrary($libraryName: String, $description:String){
+    addLibrary(libraryName: $libraryName,  description: $description){
       _id
-      text
-      user{
-        _id
-      }
-      match{
-        _id
-      }
+      libraryName
+      description
     }
   }
 `;
 
 export const UPDATE_LIBRARY = gql`
-    mutation updateUser($userId: ID!) {
-        updateUser(userId:$userId) {
-            user{
+    mutation updateLibrary($libraryId: ID!) {
+        updateLibrary(libraryId: $libraryId) {
+            library{
             _id
-            email
-            password
-            likes
-            cart
+            libraryName
+            description
             }
         }
     }
 `;
 
 export const REMOVE_LIBRARY = gql`
-  mutation removeThread($threadId: ID!) {
-    removeThread(threadId: $threadId) {
+  mutation removeLibrary($libraryId: ID!) {
+    removeLibrary(libraryId: $libraryId) {
           _id
-          text
-          date
+          libraryName
+          description
     }
   }
 `;
 
 export const ADD_PAINTING = gql`
-  mutation addMessage($text:String, $date:DATE, $thread:ID, $user:ID){
-    addMessage(text:$text, date:$date, thread:$thread, user:$user){
+  mutation addPainting($title: String, $year:DATE, $medium: String, $description: String, $photo: String, $library:ID){
+    addPainting(title: $title, year: $year, medium: $medium, description: $description, photo: $photo, library: $library){
       _id
-      text
-      date
-      thread{
-        _id
-      }
-      user{
-        _id
+      title
+      year
+      medium
+      description
+      photo
+      library {
+          _id
+          libraryName
+          description
       }
     }
   }
