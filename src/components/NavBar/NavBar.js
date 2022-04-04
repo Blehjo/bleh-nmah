@@ -90,13 +90,13 @@ export default function Navbar() {
                                             </NavLink>
                                         </div>
                                         <div className="flex-shrink-0">
-                                            <NavLink to='/messages' >
+                                            <NavLink to='/likes' >
                                                 <button
                                                     type="button"
                                                     className="relative ml-3 inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-teal-600 hover:bg-teal-500 focus:bg-teal-500 active:outline-none active:ring-2 active:ring-offset-2 active:ring-offset-gray-800 active:ring-teal-500"
                                                 >
                                                     <ChatAltIcon className="-ml-1 mr-2 h-5 w-5" aria-hidden="true" />
-                                                    <span>Messages</span>
+                                                    <span>Likes</span>
                                                 </button>
                                             </NavLink>
                                         </div>
