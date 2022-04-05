@@ -12,13 +12,15 @@ const user = {
         'https://images.unsplash.com/photo-1540304801084-0944beb20de7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
 }
 const navigation = [
-    { name: 'Attachment Styles', to: '/attachment-styles' },
-    { name: 'Contact Us', to: '/contact-us' },
-    { name: 'Our Team', to: '/our-team' },
+    { name: 'Dashboard', to: '/dashboard' },
+    { name: 'Collections', to: '/collections' },
+    { name: 'Paintings', to: '/paintings' },
+    { name: 'About Me', to: '/about-me' },
+    { name: 'Contact Me', to: '/contact-me' },
 ]
 const userNavigation = [
-    { name: 'Dashboard', to: '/dashboard' },
-    { name: 'View My Profile', to: '/my-profile' },
+    { name: 'My Collections', to: '/my-collections' },
+    { name: 'Cart', to: '/cart' },
     { name: 'Edit Profile', to: '/edit-profile' },
 ]
 
@@ -50,7 +52,7 @@ export default function Navbar() {
                                         )}
                                     </Disclosure.Button>
                                 </div>
-                                <div className="flex-shrink-0 flex items-center">
+                                {/* <div className="flex-shrink-0 flex items-center">
                                     <Link to='/'>
                                         <img
                                             className="h-20 w-auto"
@@ -58,7 +60,7 @@ export default function Navbar() {
                                             alt="Workflow"
                                         />
                                     </Link>
-                                </div>
+                                </div> */}
                                 <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
                                     {navigation.map((item) => (
                                         <NavLink
@@ -122,6 +124,11 @@ export default function Navbar() {
                                 <div className="flex items-center">
                                     <div className="flex-shrink-0">
                                         <div className="relative md:flex items-center justify-end md:flex-1 lg:w-0">
+                                            <NavLink
+                                                to="/cart"
+                                                className="whitespace-nowrap px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-teal-700 hover:text-white">
+                                                Cart
+                                            </NavLink>
                                             <NavLink
                                                 to="/login"
                                                 className="whitespace-nowrap px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-teal-700 hover:text-white">
