@@ -42,7 +42,7 @@ export default function Navbar() {
                             <div className="flex">
                                 <div className="-ml-2 mr-2 flex items-center md:hidden">
                                     {/* Mobile menu button */}
-                                    <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                                    <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                         <span className="sr-only">Open main menu</span>
                                         {open ? (
                                             <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -65,7 +65,7 @@ export default function Navbar() {
                                         <NavLink
                                             key={item.name}
                                             to={item.to}
-                                            className="px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-teal-700 hover:text-white focus:bg-gray-800 focus:text-white"
+                                            className="px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-red-700 hover:text-white focus:bg-gray-800 focus:text-white"
                                         >
                                             {item.name}
                                         </NavLink>
@@ -80,13 +80,13 @@ export default function Navbar() {
                                             <button
                                                 key="logout"
                                                 onClick={logout}
-                                                className="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-teal-700 hover:text-white focus:bg-gray-800 focus:text-white"
+                                                className="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-red-700 hover:text-white focus:bg-gray-800 focus:text-white"
                                             >
                                                 Logout
                                             </button>
                                             <NavLink
                                                 to="/dashboard"
-                                                className="px-3 py-1 rounded-md text-base font-medium text-gray-300 border-2 border-teal-700 hover:bg-teal-700 hover:text-white bg-teal-800 focus:bg-gray-800 focus:text-white">
+                                                className="px-3 py-1 rounded-md text-base font-medium text-gray-300 border-2 border-red-700 hover:bg-red-700 hover:text-white bg-red-800 focus:bg-gray-800 focus:text-white">
                                                 Dashboard
                                             </NavLink>
                                         </div>
@@ -94,7 +94,7 @@ export default function Navbar() {
                                             <NavLink to='/likes' >
                                                 <button
                                                     type="button"
-                                                    className="relative ml-3 inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-teal-600 hover:bg-teal-500 focus:bg-teal-500 active:outline-none active:ring-2 active:ring-offset-2 active:ring-offset-gray-800 active:ring-teal-500"
+                                                    className="relative ml-3 inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-500 focus:bg-red-500 active:outline-none active:ring-2 active:ring-offset-2 active:ring-offset-gray-800 active:ring-red-500"
                                                 >
                                                     <ChatAltIcon className="-ml-1 mr-2 h-5 w-5" aria-hidden="true" />
                                                     <span>Likes</span>
@@ -125,18 +125,18 @@ export default function Navbar() {
                                         <div className="relative md:flex items-center justify-end md:flex-1 lg:w-0">
                                             <NavLink
                                                 to="/cart"
-                                                className="whitespace-nowrap px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-teal-700 hover:text-white">
+                                                className="whitespace-nowrap px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-red-700 hover:text-white">
                                                 Cart
                                             </NavLink>
                                             <NavLink
                                                 to="/login"
-                                                className="whitespace-nowrap px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-teal-700 hover:text-white">
+                                                className="whitespace-nowrap px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-red-700 hover:text-white">
                                                 Log in
                                             </NavLink>
                                             <div className="hidden md:ml-4 md:flex-shrink-0 md:flex md:items-center">
                                                 <NavLink
                                                     to="/signup"
-                                                    className="ml-6 whitespace-nowrap items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-emerald-600 hover:bg-emerald-500"
+                                                    className="ml-6 whitespace-nowrap items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-amber-700 hover:bg-amber-600"
                                                 >
                                                     Sign up
                                                 </NavLink>
@@ -156,7 +156,7 @@ export default function Navbar() {
                                         <NavLink
                                             key={item.name}
                                             to={item.to}
-                                            className="bg--900 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-teal-700 hover:text-white focus:bg-gray-800 focus:text-white"
+                                            className="bg--900 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-red-700 hover:text-white focus:bg-gray-800 focus:text-white"
                                         >
                                             {item.name}
                                         </NavLink>
@@ -190,7 +190,7 @@ export default function Navbar() {
                                                 key={item.name}
                                                 as="a"
                                                 to={item.to}
-                                                className="bg--900 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-teal-700 hover:text-white focus:bg-gray-800 focus:text-white"
+                                                className="bg--900 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-red-700 hover:text-white focus:bg-gray-800 focus:text-white"
                                             >
                                                 {item.name}
                                             </NavLink>
@@ -205,7 +205,7 @@ export default function Navbar() {
                                         <NavLink
                                             key={item.name}
                                             to={item.to}
-                                            className="bg--900 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-teal-700 hover:text-white focus:bg-gray-800 focus:text-white"
+                                            className="bg--900 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-red-700 hover:text-white focus:bg-gray-800 focus:text-white"
                                         >
                                             {item.name}
                                         </NavLink>

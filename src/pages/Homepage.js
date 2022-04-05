@@ -20,7 +20,7 @@ export default function Homepage() {
                             <div className="mt-5 prose prose-indigo text-center text-lg mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
 
                                 <p className='mt-14 font-medium text-lg'>
-                                    Check out the <a className='hover:text-teal-500 no-underline text-teal-700' rel="noreferrer" href="/faq">FAQ</a>
+                                    Check out the <a className='hover:text-red-500 no-underline text-red-700' rel="noreferrer" href="/faq">FAQ</a>
                                 </p>
                             </div>
                         </div>
