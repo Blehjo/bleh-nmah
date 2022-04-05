@@ -15,6 +15,7 @@ import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import Footer from './components/Footer/Footer'
 
 
 const url = process.env.NODE_ENV === 'development'
