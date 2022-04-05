@@ -11,7 +11,7 @@ const navigation = {
     social: [
       {
         name: 'GitHub',
-        href: 'https://github.com/polari-2022',
+        href: 'https://github.com/Blehjo/frontend-bleh-nmah',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path
@@ -23,8 +23,8 @@ const navigation = {
         ),
       },
       {
-        name: 'Instagram',
-        href: 'https://www.instagram.com/polari_dating/',
+        name: 'LinkedIn',
+        href: 'https://www.linkedin.com/in/bleh-s/',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path
@@ -59,7 +59,7 @@ const navigation = {
               </a>
             ))}
           </div>
-          <p className="mt-8 text-center text-base text-gray-400">&copy; 2022 Polari. All rights reserved.</p>
+          <p className="mt-8 text-center text-base text-gray-400">&copy; 2022 Bleh Nmah. All rights reserved.</p>
         </div>
       </footer>
     )
