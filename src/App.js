@@ -42,7 +42,7 @@ const client = new ApolloClient({
 });
 
 function App() {
-  const [attachment, setAttachment] = useState('');
+  // const [attachment, setAttachment] = useState('');
 
   return (
     <ApolloProvider client={client}>
