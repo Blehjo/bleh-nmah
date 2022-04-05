@@ -12,7 +12,6 @@ import Navbar from './components/NavBar/NavBar';
 import Homepage from './pages/Homepage';
 import Paintings from './pages/Paintings';
 import AboutMe from './pages/AboutMe';
-import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Footer from './components/Footer/Footer'
@@ -51,8 +50,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Homepage />} />
           <Route path='/paintings' element={<Paintings />} />
-          <Route path='/aboutme' element={<AboutMe />} />
-          <Route path='/contact' element={<Contact />} />
+          <Route path='/aboutme' element={<AboutMe />} />          
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
         </Routes>

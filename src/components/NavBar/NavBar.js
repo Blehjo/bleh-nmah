@@ -16,7 +16,6 @@ const navigation = [
     { name: 'Collections', to: '/collections' },
     { name: 'Paintings', to: '/paintings' },
     { name: 'About Me', to: '/about-me' },
-    { name: 'Contact Me', to: '/contact-me' },
 ]
 const userNavigation = [
     { name: 'My Collections', to: '/my-collections' },
@@ -35,7 +34,7 @@ export default function Navbar() {
     };
 
     return (
-        <Disclosure as="nav" className="bg-teal-900">
+        <Disclosure as="nav" className="bg-red-900">
             {({ open }) => (
                 <>
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
