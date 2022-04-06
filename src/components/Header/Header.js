@@ -15,9 +15,10 @@ export default function Header() {
         </div>
         <div className="relative text-center max-w-7xl mx-auto py-24 px-4 flex flex-col items-center sm:py-32 sm:px-6 lg:px-8">
           <h1 className="header text-4xl font-extrabold tracking-tight text-stone-50 sm:text-5xl lg:text-6xl">Bleh Nmah</h1>
-          {/* <p className="about-blurb mt-6 text-xl font-medium xl:text-2xl text-stone-50 max-w-3xl">
-            Welcome to Bleh Nmah, Explore my collections from when I started my career in art up until my current works.
-          </p> */}
+          <p className="header mt-6 text-xl font-medium xl:text-2xl text-stone-50 max-w-3xl">
+            Welcome! Checkout my past collections and keep up with my current ones.
+          </p>
+          <button className="px-3 py-2 rounded-md border-2 border-orange-900 text-base font-medium text-5xl text-white hover:bg-orange-600 hover:text-white focus:bg-gray-800 focus:text-white">ENTER</button>
         </div>
       </div>
     </>
