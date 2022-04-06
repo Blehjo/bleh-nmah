@@ -51,15 +51,15 @@ export default function Navbar() {
                                         )}
                                     </Disclosure.Button>
                                 </div>
-                                {/* <div className="flex-shrink-0 flex items-center">
+                                <div className="flex-shrink-0 flex items-center">
                                     <Link to='/'>
                                         <img
                                             className="h-20 w-auto"
-                                            src="https://user-images.githubusercontent.com/87889660/158719963-e835f37c-ef8f-4c1c-8c8b-e731aa073929.svg"
+                                            src={require("/Users/blehjo/projects/Bleh-Nmah/frontend-bleh-nmah/src/assets/miscellaneous/logo.png")}
                                             alt="Workflow"
                                         />
                                     </Link>
-                                </div> */}
+                                </div>
                                 <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
                                     {navigation.map((item) => (
                                         <NavLink
