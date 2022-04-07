@@ -1,9 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 const navigation = {
     main: [
-      { name: 'Attachment Styles', href: '/attachment-styles' },
-      { name: 'Contact Us', href: '/contact-us' },
-      { name: 'Our Team', href: '/our-team' },
+      { name: 'Contact', href: '/contact' },
       { name: 'Log in', href: '/login' },
       { name: 'Sign up', href: '/signup' },
       { name: 'FAQ', href: '/faq' },

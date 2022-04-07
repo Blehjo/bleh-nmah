@@ -14,7 +14,11 @@ import Paintings from './pages/Paintings';
 import AboutMe from './pages/AboutMe';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import Footer from './components/Footer/Footer'
+import Footer from './components/Footer/Footer';
+import Contact from './pages/Contact';
+import Dashboard from './pages/Dashboard';
+import Collections from './pages/Collections';
+
 
 
 const url = process.env.NODE_ENV === 'development'
@@ -53,6 +57,9 @@ function App() {
           <Route path='/aboutme' element={<AboutMe />} />          
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/dashboard' element={<Dashboard />} />
+          <Route path='/collections' element={<Collections />} />
         </Routes>
         <Footer />
       </div>

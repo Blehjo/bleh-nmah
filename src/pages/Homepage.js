@@ -5,7 +5,7 @@ export default function Homepage() {
         <div>
             <Header />
 
-            <div className="bg-white overflow-hidden">
+            {/* <div className="bg-white overflow-hidden">
                 <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
                     <div className="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen" />
                     <div className="mt-8 flex justify-center space-x-6">
@@ -26,7 +26,7 @@ export default function Homepage() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

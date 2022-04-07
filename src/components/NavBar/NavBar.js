@@ -15,7 +15,7 @@ const navigation = [
     { name: 'Dashboard', to: '/dashboard' },
     { name: 'Collections', to: '/collections' },
     { name: 'Paintings', to: '/paintings' },
-    { name: 'About Me', to: '/about-me' },
+    { name: 'About Me', to: '/aboutme' },
 ]
 const userNavigation = [
     { name: 'My Collections', to: '/my-collections' },
