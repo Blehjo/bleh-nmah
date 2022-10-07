@@ -9,7 +9,7 @@ export default function Header() {
           <img
             className="w-full h-full object-cover object-center"
             alt="the kids are losing their minds painting"
-            src={require("/Users/blehjo/projects/Bleh-Nmah/frontend-bleh-nmah/src/assets/landing-page/the-kids-are-losing-their-minds-cropped-2.jpg")}
+            src={require("../../assets/landing-page/the-kids-are-losing-their-minds-cropped-2.jpg")}
           />
           <div className="absolute inset-0" aria-hidden="true" />
         </div>

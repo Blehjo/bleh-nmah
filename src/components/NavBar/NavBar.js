@@ -55,7 +55,7 @@ export default function Navbar() {
                                     <Link to='/'>
                                         <img
                                             className="h-20 w-auto"
-                                            src={require("/Users/blehjo/projects/Bleh-Nmah/frontend-bleh-nmah/src/assets/miscellaneous/logo.png")}
+                                            src={require("../../assets/miscellaneous/logo.png")}
                                             alt="Workflow"
                                         />
                                     </Link>
